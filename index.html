@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사전 검색 서비스</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 검색창     -->
+    <div id="search-box">
+        <!-- <h1>국립국어원 표준국어대사전</h1> -->
+        <img src = "./logo_big.png" style="width:300px"> 
+        <br>
+        <br>
+        <br>
+        <input id="search" type="text" value="" placeholder="단어를 검색하세요 ..."></input>
+        <input id="submit" type="submit" value="찾기"></input>    
+    </div>
+    
+    <div class = "container1">
+        <!-- 검색결과 -->
+        <div id = "count"></div>
+        <hr>
+        <div id="container">
+            <img src = "https://c.nsdis.go.kr/images/nscus/loading.gif"/> <!--로딩-->
+        </div>
+    </div>
+        
+    <!-- 사전 -->
+    <script src = "app.js"></script>
+    
+</body>
+</html>
