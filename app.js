@@ -1,7 +1,7 @@
     const query = document.getElementById('search')
     const submitBtn = document.getElementById('submit')
     // const BASE_URL = 'http://localhost:5000/api/words'
-    const BASE_URL = 'http://dictionary-search-gook.herokuapp.com/api/words'
+    const BASE_URL = 'https://dictionary-search-gook.herokuapp.com/api/words'
 
     // 특수문자
     function checkIfStringHasSpecialCharacter(str) {
