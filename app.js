@@ -1,7 +1,7 @@
     const query = document.getElementById('search')
     const submitBtn = document.getElementById('submit')
     // const BASE_URL = 'http://localhost:5000/api/words'
-    const BASE_URL = 'https://dictionary-search-gook.herokuapp.com/api/words'
+    const BASE_URL = 'https://dictionary-search-words.herokuapp.com/api/words'
 
     // 특수문자
     function checkIfStringHasSpecialCharacter(str) {
@@ -62,9 +62,10 @@
             
             if(query.length === 0){ //데이터 유효성 검증
                 count.innerHTML = "'" + query + "' 검색 결과 (총 " + 0 + "개)"
-                container.innerHTML = "<h1>No Words Found !</h1>"
+                container.innerHTML = "<h1>검색어를 입력하세요</h1>"
                 return;
-            }
+            } 
+
 
             const template = words.map(word => {
                 return (
